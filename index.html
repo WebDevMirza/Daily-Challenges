@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Card Verification Layout -->
+      <div class="card card-verification-bg">
+        <svg
+          class="cross"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        <h4 class="text-dark">Verification Code</h4>
+        <p class="text-light-2">Enter this verification code on your other device to sign in.</p>
+        <ul class="code code-bg top-8">
+          <li>5</li>
+          <li>8</li>
+          <li>3</li>
+          <li>1</li>
+        </ul>
+
+        <button class="btn btn-light btn-close">CLOSE</button>
+      </div>
+
+      <!-- Card Confirmation Layout -->
+
+      <div class="card card-confirmation-bg none">
+        <svg
+          class="back"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+
+        <h4>Confirmation</h4>
+        <p>Please enter the code we sent to the number ***********78</p>
+
+        <ul class="code top-8 confirmationNum">
+          <li><input type="number" name="n1" id="n1" placeholder="—" /></li>
+          <li><input type="number" name="n1" id="n2" placeholder="—" /></li>
+          <li><input type="number" name="n1" id="n3" placeholder="—" /></li>
+          <li><input type="number" name="n1" id="n4" placeholder="—" /></li>
+        </ul>
+        <p class="resend-code top-8">Resend code</p>
+        <button class="btn btn-dark btn-confirm top-8">Confirm</button>
+      </div>
+    </div>
+  </body>
+</html>
