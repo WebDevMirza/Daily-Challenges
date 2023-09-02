@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="mirza-nav-wrapper">
+          <div data-active="false" class="mirza-toggle">
+            <!-- <i class="ti ti-menu-2"></i> -->
+            <div id="nav-icon3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <ul class="mirza-nav">
+            <li>
+              <i class="ti ti-message-share"></i>
+              <a href="javascript:;">Posts</a>
+            </li>
+            <li class="active-menu">
+              <i class="ti ti-message-circle-2"></i>
+              <a href="javascript:;">Comments</a>
+            </li>
+            <li>
+              <i class="ti ti-affiliate"></i>
+              <a href="javascript:;">About</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <i class="ti ti-bell"></i>
+          <img src="https://i.pravatar.cc/150?img=29" alt="profile" />
+        </div>
+      </header>
+      <section class="profile-section">
+        <img src="https://i.pravatar.cc/150?img=29" alt="profile" />
+        <div class="user">
+          <h3>Frances P. Troia</h3>
+          <small>Web Developer</small>
+        </div>
+        <ul>
+          <li><span>753</span><span>Posts</span></li>
+          <li><span>1477</span><span>Following</span></li>
+          <li><span>874</span><span>Followers</span></li>
+        </ul>
+        <button class="btn btn-follow">Follow</button>
+      </section>
+      <section class="comment-section">
+        <small class="no-of-comments">24 Comments</small>
+        <div class="comment-wrapper">
+          <img src="https://i.pravatar.cc/150?img=29" alt="profile" />
+          <h3><span class="userID">Frances P. Troia</span> <span>2 hours ago</span></h3>
+          <div class="comment-content">
+            <p>
+              One of the standout features of ES6 is the introduction of arrow functions. These concise, one-liner
+              functions not only simplify code but also address the notorious issue of lexical scoping, making 'this'
+              more predictable and accessible within functions.
+            </p>
+            <small id="reply">Reply</small>
+            <div data-replies="3" class="view-replies">
+              <span class="no-of-replies"
+                >View 3 replies
+                <i class="ti ti-chevron-down"></i>
+              </span>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile" />
+                <div class="comment-content">
+                  <p>Yeah, me too. 🤣</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=42" alt="profile" />
+                <div class="comment-content">
+                  <p>I cannot wait to see what you come up with.... 🤩</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=22" alt="profile" />
+                <div class="comment-content">
+                  <p>Whoa! 👏</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-wrapper">
+          <img src="https://i.pravatar.cc/150?img=30" alt="profile" />
+          <h3><span class="userID">Helen Ivory</span> <span>7 hours ago</span></h3>
+          <div class="comment-content">
+            <p>
+              Another game-changing addition is the 'let' and 'const' declarations, which provide block-scoping,
+              reducing the likelihood of variable-related bugs and enhancing code clarity. 'let' allows variables to be
+              reassigned, while 'const' ensures that a variable remains constant throughout its scope.
+            </p>
+            <small class="reply">Reply</small>
+            <div data-replies="0" class="view-replies">
+              View <span class="no-of-replies">0</span> replies
+              <i class="ti ti-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-wrapper">
+          <img src="https://i.pravatar.cc/150?img=31" alt="profile" />
+          <h3><span class="userID">Gretchen Willis</span> <span>10 hours ago</span></h3>
+          <div class="comment-content">
+            <p>One of my favorite ES6 additions is the spread operator and rest parameters.</p>
+            <small class="reply">Reply</small>
+            <div data-replies="6" class="view-replies">
+              <span class="no-of-replies">
+                View 6 replies
+                <i class="ti ti-chevron-down"></i>
+              </span>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile" />
+                <div class="comment-content">
+                  <p>Yeah, me too. 🤣</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=42" alt="profile" />
+                <div class="comment-content">
+                  <p>I cannot wait to see what you come up with.... 🤩</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile" />
+                <div class="comment-content">
+                  <p>Yeah, me too. 🤣</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=42" alt="profile" />
+                <div class="comment-content">
+                  <p>I cannot wait to see what you come up with.... 🤩</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile" />
+                <div class="comment-content">
+                  <p>Yeah, me too. 🤣</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+
+              <div class="inner-replies">
+                <img src="https://i.pravatar.cc/150?img=22" alt="profile" />
+                <div class="comment-content">
+                  <p>Whoa! 👏</p>
+                  <small id="reply">Reply</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- <div class="tooltip-container">
+      <div class="tooltip">Click the name to see the profile.</div>
+      <div class="x">X</div>
+    </div> -->
+  </body>
+</html>
