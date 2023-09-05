@@ -1,0 +1,178 @@
+/* ========================= */
+/* ======== Resets ========= */
+/* ========================= */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*,
+::placeholder {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.05em;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    display: grid;
+    place-content: center;
+}
+
+body * {
+    line-height: calc(2px + 2ex + 2px);
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* layout */
+.card {
+    padding: 3em;
+    max-width: 600px;
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    border: 30px solid #2b2b2b;
+    position: relative;
+    isolation: isolate;
+}
+
+.card::after{
+position: absolute;
+content: "";
+inset: 0;
+background-image: url("https://media.istockphoto.com/id/1136599028/vector/approved-accept-or-certified-icon-medal-with-ribbons-and-check-mark.jpg?s=612x612&w=0&k=20&c=IC-nXrym1xLky-27vFgBIgSR2QBg_-KMCAua9y2c7qs=");
+background-repeat: no-repeat;
+background-size: 30%;
+background-position: center;
+z-index: -1;
+opacity: 0.1;
+}
+
+.card-body-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.card-top {
+    display: flex;
+    gap: 1em;
+}
+
+.card-top>div {
+    width: 250px;
+    height: 80px;
+    display: grid;
+    place-content: center;
+}
+
+svg {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 560px) {
+    .card-top>div {
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    svg {
+        transform: scale(1);
+    }
+}
+
+.card-top q {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.card-bottom ul {
+    display: flex;
+    gap: 1em;
+    margin-top: 1.325em;
+}
+
+.card-bottom li {
+    background-color: #c4c4c4;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+}
+
+.card-bottom li.active {
+    background-color: #2b2b2b;
+}
+
+@media screen and (max-width: 560px) {
+    .card {
+        padding: 1.5em;
+        border-width: 1.5em;
+    }
+
+    .card-top {
+        flex-wrap: wrap;
+    }
+
+    .card-bottom {
+        flex-wrap: wrap-reverse;
+        gap: 1em;
+    }
+}
+
+small {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+small span:first-child {
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+.btn-prev,
+.btn-next {
+    cursor: pointer;
+    color: #c4c4c4;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    color: #2b2b2b;
+}
